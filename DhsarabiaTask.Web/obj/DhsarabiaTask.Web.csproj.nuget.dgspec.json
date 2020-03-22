@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\DhsarabiaTask.Web.csproj": {}
+    "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\DhsarabiaTask.Web.csproj": {}
   },
   "projects": {
-    "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\DhsarabiaTask.Web.csproj": {
+    "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\DhsarabiaTask.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\DhsarabiaTask.Web.csproj",
+        "projectUniqueName": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\DhsarabiaTask.Web.csproj",
         "projectName": "DhsarabiaTask.Web",
-        "projectPath": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\DhsarabiaTask.Web.csproj",
+        "projectPath": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\DhsarabiaTask.Web.csproj",
         "packagesPath": "C:\\Users\\RoOoOz\\.nuget\\packages\\",
-        "outputPath": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\obj\\",
+        "outputPath": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RoOoOz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

@@ -37,7 +37,7 @@ namespace DhsarabiaTask.API
             services.AddTransient<IEmployeeServices, EmployeeServices>();
 
             services.AddDbContext<DhsarabiaTaskContext>(options =>
-        options.UseSqlite(Configuration.GetConnectionString("DhsarabiaTaskDB")));
+        options.UseSqlServer(Configuration.GetConnectionString("DhsarabiaTaskDB")));
 
 
             services.AddControllers();

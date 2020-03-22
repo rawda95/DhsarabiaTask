@@ -4950,11 +4950,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Repositories\\DhsarabiaTask.Repositories.csproj",
+      "projectUniqueName": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Repositories\\DhsarabiaTask.Repositories.csproj",
       "projectName": "DhsarabiaTask.Repositories",
-      "projectPath": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Repositories\\DhsarabiaTask.Repositories.csproj",
+      "projectPath": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Repositories\\DhsarabiaTask.Repositories.csproj",
       "packagesPath": "C:\\Users\\RoOoOz\\.nuget\\packages\\",
-      "outputPath": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Repositories\\obj\\",
+      "outputPath": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RoOoOz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4970,8 +4970,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj": {
-              "projectPath": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj"
+            "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj": {
+              "projectPath": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj"
             }
           }
         }
