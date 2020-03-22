@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj": {}
+    "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj": {}
   },
   "projects": {
-    "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj": {
+    "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj",
+        "projectUniqueName": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj",
         "projectName": "DhsarabiaTask.Data",
-        "projectPath": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj",
+        "projectPath": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\DhsarabiaTask.Data.csproj",
         "packagesPath": "C:\\Users\\RoOoOz\\.nuget\\packages\\",
-        "outputPath": "F:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\obj\\",
+        "outputPath": "f:\\work\\DhsarabiaTask\\DhsarabiaTask\\DhsarabiaTask.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RoOoOz\\AppData\\Roaming\\NuGet\\NuGet.Config",
