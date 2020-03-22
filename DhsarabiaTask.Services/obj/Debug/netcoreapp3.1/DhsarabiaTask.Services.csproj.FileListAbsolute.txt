@@ -1,0 +1,13 @@
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\bin\Debug\netcoreapp3.1\DhsarabiaTask.Services.deps.json
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\bin\Debug\netcoreapp3.1\DhsarabiaTask.Services.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\bin\Debug\netcoreapp3.1\DhsarabiaTask.Services.pdb
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\obj\Debug\netcoreapp3.1\DhsarabiaTask.Services.csprojAssemblyReference.cache
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\obj\Debug\netcoreapp3.1\DhsarabiaTask.Services.AssemblyInfoInputs.cache
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\obj\Debug\netcoreapp3.1\DhsarabiaTask.Services.AssemblyInfo.cs
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\obj\Debug\netcoreapp3.1\DhsarabiaTask.Services.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\obj\Debug\netcoreapp3.1\DhsarabiaTask.Services.pdb
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\bin\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\bin\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.pdb
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.pdb
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Services\obj\Debug\netcoreapp3.1\DhsarabiaTask.Services.csproj.CopyComplete

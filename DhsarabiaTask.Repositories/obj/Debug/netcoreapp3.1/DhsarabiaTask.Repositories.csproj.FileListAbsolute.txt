@@ -1,0 +1,11 @@
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\bin\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.deps.json
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\bin\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\bin\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.pdb
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\obj\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.csprojAssemblyReference.cache
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\obj\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.AssemblyInfoInputs.cache
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\obj\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.AssemblyInfo.cs
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\obj\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\obj\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.pdb
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.pdb
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Repositories\obj\Debug\netcoreapp3.1\DhsarabiaTask.Repositories.csproj.CopyComplete

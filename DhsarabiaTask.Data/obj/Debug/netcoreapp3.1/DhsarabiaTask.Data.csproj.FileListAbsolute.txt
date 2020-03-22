@@ -1,0 +1,10 @@
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.deps.json
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\obj\Debug\netcoreapp3.1\DhsarabiaTask.Data.csprojAssemblyReference.cache
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\obj\Debug\netcoreapp3.1\DhsarabiaTask.Data.AssemblyInfoInputs.cache
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\obj\Debug\netcoreapp3.1\DhsarabiaTask.Data.AssemblyInfo.cs
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.runtimeconfig.json
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.runtimeconfig.dev.json
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\bin\Debug\netcoreapp3.1\DhsarabiaTask.Data.pdb
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\obj\Debug\netcoreapp3.1\DhsarabiaTask.Data.dll
+F:\work\DhsarabiaTask\DhsarabiaTask\DhsarabiaTask.Data\obj\Debug\netcoreapp3.1\DhsarabiaTask.Data.pdb
