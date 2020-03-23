@@ -13,6 +13,8 @@ namespace DhsarabiaTask.API.Mapper
         public AutoMapperProfile()
         {
 
+            CreateMap< Employee, DTOEmployee>();
+
             CreateMap<DTOEmployee, Employee>();
         }
     }

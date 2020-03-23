@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using DhsarabiaTask.Web.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,8 @@ namespace DhsarabiaTask.Web.Controllers
             client.BaseAddress = new Uri(apiUrl);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
         }
 
         public async Task<IActionResult> EmployeeList()
@@ -32,7 +35,7 @@ namespace DhsarabiaTask.Web.Controllers
             if (responseMessage.IsSuccessStatusCode)
             {
                 var responseData = responseMessage.Content.ReadAsStringAsync().Result;
-                var employees = JsonConvert.DeserializeObject<EmployeeModel>(responseData);
+                var employees = JsonConvert.DeserializeObject<List<EmployeeModel>>(responseData);
 
                 return View(employees);
 
@@ -48,7 +51,7 @@ namespace DhsarabiaTask.Web.Controllers
 
         }
 
-
+        [HttpPost]
         public async Task<IActionResult> Add(EmployeeModel employee)
         {
             if(employee.FirstName==null)
@@ -59,8 +62,43 @@ namespace DhsarabiaTask.Web.Controllers
             else
             {
                 var url = apiUrl + "/AddEmployee";
-                StringContent content = new StringContent(JsonConvert.SerializeObject(employee));
+                StringContent content = new StringContent(JsonConvert.SerializeObject(employee), Encoding.UTF8, "application/json");
                 HttpResponseMessage responseMessage = await client.PostAsync(url,content);
+
+                if (responseMessage.IsSuccessStatusCode)
+                {
+                    var responseData = responseMessage.Content.ReadAsStringAsync().Result;
+
+                    var employeeResult = JsonConvert.DeserializeObject<EmployeeModel>(responseData);
+
+                    return Json(  employeeResult);
+
+                }
+                else
+                {
+                    return Json(new { message = "Api error", error = "An error across while add employee please try again later." });
+
+                    }
+            }
+            
+
+        }
+
+
+
+        [HttpPut]
+        public async Task<IActionResult> Update(EmployeeModel employee)
+        {
+            if (employee.FirstName == null)
+            {
+                return Json(new { message = "Validation Failed", error = "First name is requierd" });
+
+            }
+            else
+            {
+                var url = apiUrl + "/EditEmployee";
+                StringContent content = new StringContent(JsonConvert.SerializeObject(employee), Encoding.UTF8, "application/json");
+                HttpResponseMessage responseMessage = await client.PutAsync(url, content);
 
                 if (responseMessage.IsSuccessStatusCode)
                 {
@@ -70,25 +108,31 @@ namespace DhsarabiaTask.Web.Controllers
                 }
                 else
                 {
-                    return Json(responseMessage);
+                    return Json(new { message = "Api error", error = "An error across while add employee please try again later." });
                 }
             }
-            
+
 
         }
-        public async Task<IActionResult> test()
+
+        [HttpDelete]
+        public async Task<IActionResult>Delete(int EmployeeId)
         {
-            HttpResponseMessage responseMessage = await client.GetAsync(apiUrl);
+            var url = apiUrl + $"/DeleteEmployee/?EmployeeId={EmployeeId}";
+            HttpResponseMessage responseMessage = await client.DeleteAsync(url);
 
             if (responseMessage.IsSuccessStatusCode)
             {
                 var responseData = responseMessage.Content.ReadAsStringAsync().Result;
-                return Json(responseData);
+                return Ok();
 
             }
             else
-                return Json(new {error="erro" });
+            {
+                return Json(new { message = "Api error", error = "An error across while add employee please try again later." });
+            }
         }
+
 
     }
 }

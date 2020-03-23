@@ -9,7 +9,7 @@ namespace DhsarabiaTask.Services.Interfaces
     {
         bool Delete(Employee employee);
         List<Employee> GetEmployees();
-        bool Insert(Employee employee);
+        int Insert(Employee employee);
         bool Update(Employee employee);
     }
 }

@@ -34,8 +34,8 @@ namespace DhsarabiaTask.API.Controllers
         }
 
         [HttpPost]
-        [ResponseType(typeof(DTOEmployee))]
-        public ActionResult AddEmployee(DTOEmployee DTOEmployee)
+        [Route("AddEmployee")]
+        public IActionResult AddEmployee(DTOEmployee DTOEmployee)
 
         {
             if(DTOEmployee.FirstName==null )
@@ -45,10 +45,11 @@ namespace DhsarabiaTask.API.Controllers
             try
             {
                 var employee = mapper.Map<DTOEmployee, Employee>(DTOEmployee);
-                var InsertResult = this.employeeServices.Insert(employee);
-                if(InsertResult)
+                var employeeId = this.employeeServices.Insert(employee);
+                if(employeeId != 0)
                 {
-                    return Ok();
+                    employee.Id = employeeId;
+                    return Json(employee);
 
                 }
                 else
@@ -65,5 +66,71 @@ namespace DhsarabiaTask.API.Controllers
         }
 
 
+
+
+
+
+
+
+
+        [HttpPut]
+        [Route("EditEmployee")]
+        public IActionResult EditEmployee(DTOEmployee DTOEmployee)
+
+        {
+            if (DTOEmployee.FirstName == null)
+            {
+                return Json(new { message = "Validation Failed", error = "First name is requierd" });
+            }
+            try
+            {
+                var employee = mapper.Map<DTOEmployee, Employee>(DTOEmployee);
+                var InsertResult = this.employeeServices.Update(employee);
+                if (InsertResult)
+                {
+                    return Ok();
+
+                }
+                else
+                {
+                    return Json(new { error = "An error across while update employee please try again later." });
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return Json(new { error = ex.Message });
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        [HttpDelete]
+        [Route("DeleteEmployee")]
+        public IActionResult DeleteEmployee(int EmployeeId)
+        {
+            var deleteReuslt = this.employeeServices.Delete(new Employee() { Id= EmployeeId });
+            if (deleteReuslt)
+            {
+                return Ok();
+
+            }
+            else
+            {
+                return Json(new { error = "An error across while delete employee please try again later." });
+
+            }
+
+
+
+        }
     }
 }

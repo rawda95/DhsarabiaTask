@@ -24,7 +24,7 @@ namespace DhsarabiaTask.Services.Services
         {
             return this.employeeRepository.GetEmployees();
         }
-        public bool Insert(Employee employee)
+        public int Insert(Employee employee)
         {
             return this.employeeRepository.Insert(employee);
         }

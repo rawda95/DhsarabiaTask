@@ -20,17 +20,17 @@ namespace DhsarabiaTask.Repositories.Repositories
 
 
 
-        public bool Insert(Employee employee)
+        public int Insert(Employee employee)
         {
             context.Set<Employee>().Add(employee);
             try
             {
                 context.SaveChanges();
-                return true;
+                return employee.Id;
             }
             catch
             {
-                return false;
+                return 0;
             }
 
         }
@@ -42,7 +42,6 @@ namespace DhsarabiaTask.Repositories.Repositories
                 Employee OldEmployee = context.Set<Employee>().Where(e => e.Id == employee.Id).FirstOrDefault();
 
                 OldEmployee.FirstName = employee.FirstName;
-                OldEmployee.LastName = employee.LastName;
 
 
                 context.Entry<Employee>(OldEmployee).State = EntityState.Modified;
