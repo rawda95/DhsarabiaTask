@@ -2,7 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Description;
+using AutoMapper;
+using DhsarabiaTask.API.Models;
+using DhsarabiaTask.Data.Models;
+using DhsarabiaTask.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace DhsarabiaTask.API.Controllers
 {
@@ -10,16 +16,54 @@ namespace DhsarabiaTask.API.Controllers
     [Route("[controller]")]
     public class EmployeeController : Controller
     {
-        public IActionResult Index()
+        private readonly IEmployeeServices employeeServices;
+        private readonly IMapper mapper; 
+
+        public EmployeeController(IEmployeeServices employeeServices, IMapper mapper)
         {
-            return View();
+            this.employeeServices = employeeServices;
+            this.mapper = mapper; 
         }
 
         [HttpGet]
-        [Route("TryUrl")]
-        public string tryUrl()
+        [Route("GetEmployees")]
+        public List<DTOEmployee> GetEmployees()
         {
-            return "string"; 
+            var employees = this.employeeServices.GetEmployees();
+            return mapper.Map<List<Employee>, List<DTOEmployee>>(employees);
         }
+
+        [HttpPost]
+        [ResponseType(typeof(DTOEmployee))]
+        public ActionResult AddEmployee(DTOEmployee DTOEmployee)
+
+        {
+            if(DTOEmployee.FirstName==null )
+            {
+                return Json(new { message = "Validation Failed",error="First name is requierd"});
+            }
+            try
+            {
+                var employee = mapper.Map<DTOEmployee, Employee>(DTOEmployee);
+                var InsertResult = this.employeeServices.Insert(employee);
+                if(InsertResult)
+                {
+                    return Ok();
+
+                }
+                else
+                {
+                    return Json(new { error = "An error across while add employee please try again later." });
+
+                }
+
+            }
+            catch(Exception ex)
+            {
+                return Json(new { error = ex.Message });
+            }
+        }
+
+
     }
 }
