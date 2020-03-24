@@ -105,13 +105,13 @@ $(document).on('submit', '#editEmployeeForm', function (e) {
 
 function AddNewEmploeeToTable(employeeId,employeeName) {
 
-    let html = `<tr id="employeeId">
+    let html = `<tr id="${employeeId}">
 
                                 <td class="employeeName">${employeeName}</td>
 
                                 <td>
-                                    <a href="#editEmployeeModal" onclick="EditEmployeeClick(this,'@employee.Id')" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                    <a href="#deleteEmployeeModal" onclick="DeleteEmployeeClick('@employee.Id')" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                    <a href="#editEmployeeModal" onclick="EditEmployeeClick(this,'${employeeId}')" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                    <a href="#deleteEmployeeModal" onclick="DeleteEmployeeClick('${employeeId}')" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>`;
 
